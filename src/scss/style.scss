@@ -1,0 +1,31 @@
+// @import "fonts";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+
+    background: {
+        image: url("@img/bg.jpeg");
+        position: center;
+        repeat: no-repeat;
+        size: cover;
+    } 
+}
+
+@import "header";
+@import "main";
+@import "footer";
