@@ -1,3 +1,365 @@
 <main>
+    <h1 class="title">Memory game</h1>
+    <div class="over-text">
+        Click to start
+    </div>
+    <div id="game-over" class="over-text">
+        Game over
+        <span class="over-text--small">Click to restart</span>
+    </div>
+    <div id="game-over" class="over-text">
+        Victory
+        <span class="over-text--small">Click to restart</span>
+    </div>
 
+    <div class="game-container">
+        <div class="game-info-container">
+            <div class="game-timer">
+                Timer
+                <span id="timer">100</span>
+            </div>
+            <div class="game-flips">
+                Flips
+                <span id="flips">7</span>
+            </div>
+            <div id="refresh" class="game-refresh">Refresh</div>
+        </div>
+        <div class="card active matched">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-tree-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-sled-sleigh-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-angel-wing-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-gingerbread-santa-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-candy-decoration-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-sled-sleigh-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-outline-snowflake-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-candy-decoration-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-reindeer-animal-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-gingerbread-santa-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-santa-claus-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-outline-snowflake-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-reindeer-animal-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-tree-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-santa-claus-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+        <div class="card">
+            <div class="snow">
+                <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-3" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-4" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-5" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-6" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-7" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-8" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-9" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+                <img class="snowflake snowflake-10" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
+            </div>
+
+            <div class="face back-face">
+                <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
+            </div>
+            <div class="face front-face">
+                <img class="icon" src="@img/icons/christmas-angel-wing-svgrepo-com.svg" alt="icon" />
+            </div>
+        </div>
+
+    </div>
 </main>

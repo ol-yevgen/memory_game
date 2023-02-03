@@ -1,0 +1,134 @@
+main {
+    font-family: "Dancing Script";
+}
+
+.title {
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 5rem;
+    text-align: center;
+
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.game-container {
+    margin: 0 30px 30px 30px;
+
+    font-size: 1.9rem;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: center;
+    gap: 10px;
+
+    perspective: 500px;
+}
+
+.game-info-container {
+    grid-column: 1 / -1;
+    text-align: center;
+
+    & > div {
+        margin-bottom: 20px;
+    }
+}
+
+.game-refresh {
+    padding: 5px 0;
+
+    border-radius: 8px;
+
+    color: rgb(52, 52, 52);
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.4s ease-in;
+
+    &:hover {
+        cursor: pointer;
+
+        color: rgb(233, 233, 233);
+
+        background: linear-gradient(to left, rgba(46, 70, 203, 0.9), rgba(209, 203, 91, 0.9));
+    }
+
+    &:active {
+        border-radius: 11px;
+        color: rgb(233, 233, 233);
+        background: linear-gradient(to left, rgba(15, 43, 198, 0.9), rgba(212, 202, 20, 0.9));
+
+        transition: all 0.8s;
+    }
+}
+
+#timer,
+#flips {
+    margin-left: 5px;
+}
+
+.over-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: capitalize;
+    text-align: center;
+    transition: all 0.8s;
+
+    &--small {
+        margin-top: 30px;
+        font-size: 3rem;
+    }
+}
+
+.visible {
+    display: flex;
+    flex-direction: column;
+
+    animation: textGrow 0.5s forwards;
+}
+
+@keyframes textGrow {
+    from {
+        background: rgb(0, 0, 0);
+        font-size: 0;
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.9);
+        font-size: 10rem;
+    }
+}
+
+@media (min-width: 680px) {
+    .game-container {
+        grid-template-columns: repeat(4, auto);
+
+        margin: 30px;
+    }
+
+    .game-info-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+
+        & > * {
+            align-self: center;
+        }
+    }
+
+    .game-refresh {
+        grid-column: 4;
+    }
+}

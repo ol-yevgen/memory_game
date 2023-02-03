@@ -1,5 +1,5 @@
 import * as myFunction from "./modules/function.js";
-import * as burger from './modules/burger.js';
+import * as cardRotation from './modules/card-rotation.js';
 
 myFunction.isWebp();
-burger.burger();
+cardRotation.cardRotation();

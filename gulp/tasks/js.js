@@ -2,7 +2,7 @@ import webpack from 'webpack-stream';
 import uglify from 'gulp-uglify';
 
 export const js = () => {
-    return app.gulp.src(app.path.src.js, { sourcemaps: app.isDev })
+    return app.gulp.src(app.path.src.js, { sourcemaps: true })
         .pipe(app.plugins.plumber(
             app.plugins.notify.onError({
                 title: "JS",

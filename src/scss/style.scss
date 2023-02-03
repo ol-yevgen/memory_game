@@ -1,4 +1,4 @@
-// @import "fonts";
+@import "fonts";
 
 * {
     margin: 0;
@@ -14,18 +14,17 @@ li {
     list-style: none;
 }
 
-.wrapper {
-    width: 100%;
-    height: 100vh;
+body {
+    color: #fff;
 
     background: {
-        image: url("@img/bg.jpeg");
+        image: url("@img/bg.jpg");
         position: center;
         repeat: no-repeat;
         size: cover;
-    } 
-}
+    }
 
-@import "header";
+    min-height: 100vh;
+}
 @import "main";
-@import "footer";
+@import "card";

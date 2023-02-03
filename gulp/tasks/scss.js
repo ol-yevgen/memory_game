@@ -6,7 +6,6 @@ import webpcss from 'gulp-webpcss'; // WEBP images output
 import autoprefixer from 'gulp-autoprefixer'; // Adding vendor prefixes
 import groupCssMediaQueries from 'gulp-group-css-media-queries'; // Grouping media queries
 
-
 const sass = gulpSass(dartSass);
 
 export const scss = () => {
