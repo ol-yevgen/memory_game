@@ -123,7 +123,7 @@ export function game() {
     const overlays = document.querySelectorAll(".over-text");
     const cards = document.querySelectorAll(".card");
     const refresh = document.getElementById("refresh");
-    let game = new memoryGame(100, cards);
+    let game = new memoryGame(60, cards);
 
     overlays.forEach((over) => {
         over.addEventListener("click", () => {
