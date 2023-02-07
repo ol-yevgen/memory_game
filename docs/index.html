@@ -5,24 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="<Memory game. Learning project of js classes>">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap&_v=20230203173148"
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap&_v=20230207124934"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap&_v=20230203173148" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.min.css?_v=20230203173148">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap&_v=20230207124934" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css?_v=20230207124934">
     <title class="site-title">Memory game</title>
 </head>
 <body>
     <div class="wrapper">
         <main>
     <h1 class="title">Memory game</h1>
-    <div class="over-text">
+    <div class="over-text visible">
         Click to start
     </div>
     <div id="game-over" class="over-text">
         Game over
         <span class="over-text--small">Click to restart</span>
     </div>
-    <div id="game-over" class="over-text">
+    <div id="game-victory" class="over-text">
         Victory
         <span class="over-text--small">Click to restart</span>
     </div>
@@ -35,11 +35,11 @@
             </div>
             <div class="game-flips">
                 Flips
-                <span id="flips">7</span>
+                <span id="flips">0</span>
             </div>
             <div id="refresh" class="game-refresh">Refresh</div>
         </div>
-        <div class="card active matched">
+        <div class="card">
             <div class="snow">
                 <img class="snowflake snowflake-1" src="./img/icons/snowflake-svgrepo-com.svg" alt="#" />
                 <img class="snowflake snowflake-2" src="./img/icons/snowflake-svgrepo-com.svg" alt="#" />
@@ -57,7 +57,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-tree-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-tree-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -78,7 +78,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-sled-sleigh-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-sled-sleigh-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -99,7 +99,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-angel-wing-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-angel-wing-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -120,7 +120,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-gingerbread-santa-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-gingerbread-santa-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -141,7 +141,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-candy-decoration-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-candy-decoration-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -162,7 +162,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-sled-sleigh-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-sled-sleigh-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -183,7 +183,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-outline-snowflake-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-outline-snowflake-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -204,7 +204,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-candy-decoration-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-candy-decoration-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -225,7 +225,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-reindeer-animal-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-reindeer-animal-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -246,7 +246,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-gingerbread-santa-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-gingerbread-santa-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -267,7 +267,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-santa-claus-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-santa-claus-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -288,7 +288,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-outline-snowflake-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-outline-snowflake-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -309,7 +309,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-reindeer-animal-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-reindeer-animal-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -330,7 +330,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-tree-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-tree-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -351,7 +351,7 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-santa-claus-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-santa-claus-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -372,14 +372,14 @@
                 <img class="icon" src="./img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="./img/icons/christmas-angel-wing-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="./img/icons/christmas-angel-wing-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
 
     </div>
 </main>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20230203173148"></script>
-    <script src="js/app.min.js?_v=20230203173148"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12?_v=20230207124934"></script>
+    <script src="js/app.min.js?_v=20230207124934"></script>
 </body>
 </html>

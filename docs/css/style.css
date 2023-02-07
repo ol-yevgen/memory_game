@@ -61,6 +61,10 @@ li {
   list-style: none;
 }
 
+html {
+  background: #001314;
+}
+
 .no-webp body {
   background-image: url("../img/bg.jpg"); }
 
@@ -94,7 +98,7 @@ main {
 }
 
 .game-container {
-  margin: 0 30px 30px 30px;
+  padding: 30px;
   font-size: 1.9rem;
   display: -ms-grid;
   display: grid;
@@ -149,68 +153,6 @@ main {
 #timer,
 #flips {
   margin-left: 5px;
-}
-
-.over-text {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 10;
-  width: 100%;
-  height: 100vh;
-  display: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-transform: capitalize;
-  text-align: center;
-  -webkit-transition: all 0.8s;
-  -o-transition: all 0.8s;
-  transition: all 0.8s;
-}
-
-.over-text--small {
-  margin-top: 30px;
-  font-size: 3rem;
-}
-
-.visible {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-animation: textGrow 0.5s forwards;
-          animation: textGrow 0.5s forwards;
-}
-
-@-webkit-keyframes textGrow {
-  from {
-    background: rgb(0, 0, 0);
-    font-size: 0;
-  }
-
-  to {
-    background: rgba(0, 0, 0, 0.9);
-    font-size: 10rem;
-  }
-}
-
-@keyframes textGrow {
-  from {
-    background: rgb(0, 0, 0);
-    font-size: 0;
-  }
-
-  to {
-    background: rgba(0, 0, 0, 0.9);
-    font-size: 10rem;
-  }
 }
 
 .card {
@@ -553,11 +495,73 @@ main {
   }
 }
 
+.over-text {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-transform: capitalize;
+  text-align: center;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.over-text--small {
+  margin-top: 30px;
+  font-size: 3rem;
+}
+
+.visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: textGrow 0.5s forwards;
+          animation: textGrow 0.5s forwards;
+}
+
+@-webkit-keyframes textGrow {
+  from {
+    background: rgb(0, 0, 0);
+    font-size: 0;
+  }
+
+  to {
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 10rem;
+  }
+}
+
+@keyframes textGrow {
+  from {
+    background: rgb(0, 0, 0);
+    font-size: 0;
+  }
+
+  to {
+    background: rgba(0, 0, 0, 0.9);
+    font-size: 10rem;
+  }
+}
+
 @media (min-width: 680px) {
   .game-container {
     -ms-grid-columns: (auto)[4];
     grid-template-columns: repeat(4, auto);
-    margin: 30px;
   }
 
   .game-info-container {

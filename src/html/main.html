@@ -1,13 +1,13 @@
 <main>
     <h1 class="title">Memory game</h1>
-    <div class="over-text">
+    <div class="over-text visible">
         Click to start
     </div>
     <div id="game-over" class="over-text">
         Game over
         <span class="over-text--small">Click to restart</span>
     </div>
-    <div id="game-over" class="over-text">
+    <div id="game-victory" class="over-text">
         Victory
         <span class="over-text--small">Click to restart</span>
     </div>
@@ -20,11 +20,11 @@
             </div>
             <div class="game-flips">
                 Flips
-                <span id="flips">7</span>
+                <span id="flips">0</span>
             </div>
             <div id="refresh" class="game-refresh">Refresh</div>
         </div>
-        <div class="card active matched">
+        <div class="card">
             <div class="snow">
                 <img class="snowflake snowflake-1" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
                 <img class="snowflake snowflake-2" src="@img/icons/snowflake-svgrepo-com.svg" alt="#" />
@@ -42,7 +42,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-tree-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-tree-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -63,7 +63,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-sled-sleigh-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-sled-sleigh-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -84,7 +84,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-angel-wing-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-angel-wing-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -105,7 +105,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-gingerbread-santa-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-gingerbread-santa-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -126,7 +126,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-candy-decoration-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-candy-decoration-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -147,7 +147,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-sled-sleigh-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-sled-sleigh-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -168,7 +168,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-outline-snowflake-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-outline-snowflake-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -189,7 +189,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-candy-decoration-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-candy-decoration-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -210,7 +210,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-reindeer-animal-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-reindeer-animal-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -231,7 +231,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-gingerbread-santa-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-gingerbread-santa-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -252,7 +252,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-santa-claus-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-santa-claus-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -273,7 +273,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-outline-snowflake-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-outline-snowflake-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -294,7 +294,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-reindeer-animal-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-reindeer-animal-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -315,7 +315,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-tree-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-tree-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -336,7 +336,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-santa-claus-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-santa-claus-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
         <div class="card">
@@ -357,7 +357,7 @@
                 <img class="icon" src="@img/icons/gift-svgrepo-com.svg" alt="icon" />
             </div>
             <div class="face front-face">
-                <img class="icon" src="@img/icons/christmas-angel-wing-svgrepo-com.svg" alt="icon" />
+                <img class="icon icon-forward" src="@img/icons/christmas-angel-wing-svgrepo-com.svg" alt="icon" />
             </div>
         </div>
 

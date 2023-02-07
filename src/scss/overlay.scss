@@ -1,0 +1,42 @@
+.over-text {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    text-transform: capitalize;
+    text-align: center;
+    transition: all 0.8s;
+
+    &--small {
+        margin-top: 30px;
+        font-size: 3rem;
+    }
+}
+
+.visible {
+    display: flex;
+    flex-direction: column;
+
+    animation: textGrow 0.5s forwards;
+}
+
+@keyframes textGrow {
+    from {
+        background: rgb(0, 0, 0);
+        font-size: 0;
+    }
+
+    to {
+        background: rgba(0, 0, 0, 0.9);
+        font-size: 10rem;
+    }
+}
