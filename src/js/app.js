@@ -1,5 +1,7 @@
 import * as myFunction from "./modules/function.js";
-import * as cardRotation from './modules/card-rotation.js';
+import * as game from './modules/game.js';
 
-myFunction.isWebp();
-cardRotation.cardRotation();
+document.addEventListener("DOMContentLoaded", () => {
+    myFunction.isWebp();
+    game.game();
+})
