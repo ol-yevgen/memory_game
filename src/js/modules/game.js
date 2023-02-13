@@ -44,12 +44,14 @@ export function game() {
         gameOver() {
             clearInterval(this.countDown);
             document.getElementById('game-over').classList.add('visible');
+            this.overlayLock()
         }
 
         victory() {
             clearInterval(this.countDown);
             document.getElementById('game-victory').classList.add('visible');
             this.hideCards();
+            this.overlayLock();
         }
 
         hideCards() {
@@ -118,6 +120,10 @@ export function game() {
         canFlipCard(card) {
             return (!this.busy && !this.matchedCards.includes(card) && card !== this.cardToCheck)
         }
+
+        overlayLock() {
+            document.querySelector('body').classList.add('lock')
+        }
     }
 
     const overlays = document.querySelectorAll(".over-text");
@@ -128,6 +134,7 @@ export function game() {
     overlays.forEach((over) => {
         over.addEventListener("click", () => {
             over.classList.remove("visible");
+            document.querySelector('body').classList.remove('lock');
             game.startGame();
         });
     });

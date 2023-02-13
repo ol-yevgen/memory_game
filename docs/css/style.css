@@ -519,7 +519,11 @@ main {
 
 .over-text--small {
   margin-top: 30px;
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+
+.lock {
+  overflow: hidden;
 }
 
 .visible {
@@ -542,7 +546,7 @@ main {
 
   to {
     background: rgba(0, 0, 0, 0.9);
-    font-size: 10rem;
+    font-size: 8rem;
   }
 }
 
@@ -554,7 +558,7 @@ main {
 
   to {
     background: rgba(0, 0, 0, 0.9);
-    font-size: 10rem;
+    font-size: 8rem;
   }
 }
 
